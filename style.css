@@ -1,0 +1,177 @@
+:root {
+    --primary: #b23a48;
+    --secondary: #f6c453;
+    --background: #fff8f0;
+    --accent: #386641;
+    --text: #2d2d2d;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+}
+
+header {
+    background: #fff;
+    padding: 1.5em 0 1em 0;
+    border-bottom: 2px solid var(--secondary);
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: var(--primary);
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: var(--primary);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, var(--secondary) 60%, var(--background) 100%);
+    padding: 2.5em 1em 2em 1em;
+}
+
+.hero img {
+    max-width: 420px;
+    width: 100%;
+    border-radius: 1em;
+    box-shadow: 0 4px 24px rgba(178,58,72,0.13);
+    margin-bottom: 1.5em;
+}
+
+.hero-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: var(--primary);
+    margin: 0 0 0.5em 0;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    color: var(--accent);
+    margin: 0;
+}
+
+#menu {
+    background: #fff;
+    padding: 2.5em 1em;
+    text-align: center;
+}
+
+#menu h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary);
+    font-size: 2em;
+    margin-bottom: 1.5em;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.dish {
+    background: var(--background);
+    border-radius: 1em;
+    box-shadow: 0 2px 12px rgba(178,58,72,0.07);
+    padding: 1.5em 1.2em;
+    max-width: 260px;
+    min-width: 200px;
+}
+
+.dish h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--accent);
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.dish p {
+    margin: 0;
+    color: var(--text);
+    font-size: 1em;
+}
+
+#about {
+    padding: 2.5em 1em;
+    background: var(--secondary);
+    text-align: center;
+}
+
+#about h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary);
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+#about p {
+    font-size: 1.15em;
+    color: var(--accent);
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#contact {
+    padding: 2.5em 1em 3em 1em;
+    background: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary);
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+button {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 0.9em 2em;
+    border-radius: 2em;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(178,58,72,0.08);
+}
+
+button:hover {
+    background: var(--accent);
+}
